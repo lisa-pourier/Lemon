@@ -1,0 +1,15 @@
+
+<h1>Offers</h1>
+
+<div class="container">
+  <% @offers.each do |offer| %>
+    <div class="offer-box">
+      <h2><%= link_to offer.description, offer_path(offer) %></h2>
+      <p>
+        <strong>Price:</strong> <%= offer.price %><br>
+        <strong>Location:</strong> <%= offer.location %><br>
+        <strong>Status:</strong> <%= offer.status %><br>
+      </p>
+    </div>
+  <% end %>
+</div>
