@@ -1,0 +1,10 @@
+<h1>This the offer page for: <strong><%= @offer.company %></strong></h1>
+
+<div>
+  <h2><%= @offer.company %></h2>
+  <p><%= @offer.description %></p>
+  <p><%= @offer.price %></p>
+  <p>
+    <%= link_to "<< Back to All Offers", offers_path %>
+  </p>
+</div>
