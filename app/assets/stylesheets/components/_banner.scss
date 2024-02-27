@@ -3,4 +3,13 @@
   background-position: center;
   padding: 300px;
   background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+}
+
+.container {
+  position: left;
+  transform: translate(-50%, -100%);
+  text-align: center;
+  color: black;
 }
