@@ -13,6 +13,14 @@
   <% @offers.each do |offer| %>
     <div class="card">
       <div class="card-body">
+      <div class="offer-container">
+      <%= cl_image_tag offer.photo.key, height: 300, width: 400, crop: :fit %>
+    <%# <h2>Sparkle Cleanings</h2>
+    <img src="https://sparklecleaningsolutionsllc.com/wp-content/uploads/2020/12/Sparkle-Logo-200-325x141.jpg" alt="Sparkle"> %>
+</div>
+
+
+
         <h5 class="card-title"><a href="<%= offer_path(offer) %>"><%= offer.description %></a></h5>
         <p class="card-text">
           <strong>Price:</strong> <%= number_to_currency(offer.price) %><br>
