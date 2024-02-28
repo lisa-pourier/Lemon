@@ -1,4 +1,5 @@
 class OffersController < ApplicationController
+  before_action :authenticate_user!, except: [:index]
 
   def show
     @offer = Offer.find(params[:id])
