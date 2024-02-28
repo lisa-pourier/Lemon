@@ -1,0 +1,12 @@
+<h1>Create New Offer</h1>
+
+<div class="container">
+  <%= simple_form_for @offer do |f| %>
+    <%= f.input :company %>
+    <%= f.input :description %>
+    <%= f.input :price %>
+    <%= f.submit %>
+  <% end %>
+
+  <%= link_to "<< Back to All Offers", offers_path %>
+</div>
