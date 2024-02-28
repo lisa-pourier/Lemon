@@ -23,6 +23,18 @@ h1 {
   background-color: #FFF67E;
 }
 
+.card_show{
+  border: 2px solid #324b1b;
+  border-radius: 8px;
+  background-color: #FFF67E;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 25px 50px 25px 50px;
+}
+
 .card-body {
   text-align: justify;
 }
