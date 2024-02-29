@@ -6,7 +6,7 @@
   <p><%= @offer.description %></p>
   <p><%= @offer.price %></p>
   <p><%= @offer.location %></p>
-  <p><%= @offer.photo %></p>
+  <%= image_tag @offer.photo.url, width: '400px', height: '200px'  %>
   <p>
     <%= link_to "<< Back to All Offers", offers_path, class: "btn btn-dark"%>
   </p>
