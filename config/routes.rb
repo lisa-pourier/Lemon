@@ -19,5 +19,7 @@ Rails.application.routes.draw do
     resources :bookings, only: [:new, :create, :index]
   end
   get 'dashboard', to: 'pages#dashboard'
+  get 'terms', to: 'pages#terms'
+  get 'privacy', to: 'pages#privacy'
 
 end
