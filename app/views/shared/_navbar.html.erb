@@ -1,13 +1,15 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid">
-    <%= link_to "https://lemonz-b8dfa7b50d45.herokuapp.com/", class: "navbar-brand" do %>
-      <%= image_tag "https://t4.ftcdn.net/jpg/01/39/72/77/360_F_139727730_I8Q77ODEr0j6XIchVL77ZhdUyVYmXcxf.jpg", style: "width: 150px; height: auto;" %>
+    <div class="logo-name">
+    <%= link_to root_path, class: "navbar-brand" do %>
+      <%= image_tag "https://t4.ftcdn.net/jpg/01/39/72/77/360_F_139727730_I8Q77ODEr0j6XIchVL77ZhdUyVYmXcxf.jpg", style: "width: 100px; height: auto;" %>
     <%# https://avatars.githubusercontent.com/u/26257894?s=96&v=4 %>
     <% end %>
-
+    <p class="font-white">Lemonz</p>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    </div>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
