@@ -1,0 +1,12 @@
+<h1>Book <%= @offer.company %></h1>
+
+<div class="container">
+  <h1>Book <%= @offer.company %></h1>
+  <%= simple_form_for [@offer, @booking] do |f| %>
+    <%= f.input :start_date, as: :date %>
+    <%= f.input :end_date, as: :date %>
+    <%= f.submit %>
+  <% end %>
+
+  <%= link_to "<< Go Back", offer_path(@offer) %>
+</div>

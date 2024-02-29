@@ -1,12 +1,12 @@
-<h1>This the offer page for: <strong><%= @offer.company %></strong></h1>
+<h1>This is the offer page for: <strong><%= @offer.company %></strong></h1>
 
-<div class=card_show>
-  <h2><%=@offer.company %></h2>
+<div class="card_show">
+  <h2><%= @offer.company %></h2>
   <p><%= @offer.description %></p>
   <p><%= @offer.price %></p>
   <p><%= @offer.location %></p>
   <p><%= @offer.photo %></p>
   <p>
-    <%= link_to "<< Back to All Offers", offers_path, class: "btn btn-dark"%>
-  </p>
+    <%= link_to "<< Back to All Offers", offers_path, class: "btn btn-dark" %>
+   <%= link_to "Book Now", bookings_new_path(offer_id: @offer.id), class: "btn btn-success" %>
 </div>
