@@ -8,6 +8,10 @@
 </head>
 <body>
 
+  <% content_for :footer do %>
+    <%= render 'shared/footer' %>
+  <% end %>
+
   <div class="banner" style="background-image: url(<%= image_path "lemonpic.jpg" %>)">
    <div class="home-container">
 
