@@ -35,10 +35,10 @@ h1, h2 {                  // affects h1 and h2 in both offers page
 .card_show{                     //single offer page
   border: 2px solid #324b1b;
   border-radius: 8px;
-  background-color: transparent;
+  background-color: white;
   width: 50%;
   position: absolute;
-  top: 25%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 25px 50px 25px 50px;
@@ -47,6 +47,10 @@ h1, h2 {                  // affects h1 and h2 in both offers page
 .card-body {
   text-align: justify;
 }
+
+// img {
+//   align-items: center;
+// }
 
 .card-title a {          // offers descriptions
 
