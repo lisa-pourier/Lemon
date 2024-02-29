@@ -1,14 +1,19 @@
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  font-family: Helvetica, sans-serif;
+  background-color: white;
 }
 
 
-h1 {
+
+
+h1, h2 {
+  color: #324b1b;
   text-align: center;
   margin-top: 20px;
+  font-weight: bold;
 }
+
 
 .container{
   display: grid;
@@ -20,7 +25,11 @@ h1 {
 .card {
   border: 2px solid #324b1b;
   border-radius: 8px;
-  background-color: #FFF67E;
+  background-color: white;
+}
+
+.card-text {
+  text-align: end;
 }
 
 .card_show{
@@ -40,6 +49,7 @@ h1 {
 }
 
 .card-title a {
+
   color: black;
   text-decoration: none;
 }
