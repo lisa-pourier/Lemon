@@ -1,7 +1,8 @@
-<h1>This is the offer page for: <strong><%= @offer.company %></strong></h1>
+<h1>This the offer page for: <strong><%= @offer.company %></strong></h1>
+  <div class="banner" style="background-image: url(<%= image_path "lemonpic.jpg" %>)">
+<div class=card_show>
 
-<div class="card_show">
-  <h2><%= @offer.company %></h2>
+  <h2><%=@offer.company %></h2>
   <p><%= @offer.description %></p>
   <p><%= @offer.price %></p>
   <p><%= @offer.location %></p>
