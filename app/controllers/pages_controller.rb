@@ -6,4 +6,11 @@ class PagesController < ApplicationController
   def dashboard
     @bookings = current_user.bookings
   end
+
+  def terms
+  end
+
+  def privacy
+  end
+
 end

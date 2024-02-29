@@ -8,12 +8,21 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-xxx" crossorigin="anonymous" />
   </head>
 
   <body>
   <%= render "shared/navbar" %>
     <%= yield %>
-    <p class="notice"><%= notice %></p>
+    <%# <p class="notice"><%= notice %>
+
+    <% if content_for?(:footer) %>
+      <%= yield(:footer) %>
+    <% else %>
+    <!-- Default footer for other pages if not overridden -->
+    <%# <%= render 'shared/footer' %>
+    <% end %>
+
     <p class="alert"><%= alert %></p>
 
   </body>

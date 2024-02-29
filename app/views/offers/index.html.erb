@@ -1,31 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-
   <title>Lemon</title>
-
 </head>
 <body>
 
-<%# <h1>Offers</h1> %>
 <h2>Here you can view all current offers</h2>
-  <div class="banner2" style="background-image: url(<%= image_path "lemonpic3.jpg" %>)">
+<div class="banner2" style="background-image: url(<%= image_path "lemonpic3.jpg" %>)">
 <div class="container">
 
   <% @offers.each do |offer| %>
     <div class="card">
-    <%# <div class="card-content"> %>
       <div class="card-body">
-      <div class="offer-container">
-      <%= cl_image_tag offer.photo.key, height: 200, width: 400, crop: :pad %>
-
-</div>
-
-
+        <div class="offer-container">
+          <%= cl_image_tag offer.photo.key, height: 200, width: 400, crop: :pad %>
+        </div>
 
         <h5 class="card-title"><a href="<%= offer_path(offer) %>"><%= offer.description %></a></h5>
         <p class="card-text">
-          <strong>Price:</strong> <%= number_to_currency(offer.price) %><br>
+          <strong>Price:</strong> <%= number_to_currency(offer.price, unit: "€") %><br>
           <strong>Location:</strong> <%= offer.location %><br>
         </p>
       </div>
