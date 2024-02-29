@@ -7,7 +7,7 @@ body {
 
 
 
-h2 {
+h1, h2 {
   color: #324b1b;
   text-align: center;
   margin-top: 20px;
@@ -29,7 +29,7 @@ h2 {
 }
 
 .card-text {
-  align-self: end
+  text-align: center;
 }
 
 .card_show{
@@ -44,9 +44,9 @@ h2 {
   padding: 25px 50px 25px 50px;
 }
 
-// .card-body {
-//   text-align: justify;
-// }
+.card-body {
+  text-align: justify;
+}
 
 .card-title a {
 
