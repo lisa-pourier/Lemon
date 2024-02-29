@@ -1,5 +1,16 @@
+.navbar {
+  display: flex;
+}
+
+.logo-name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
 .navbar-lewagon {
-  justify-content: space-between;
+  // justify-content: space-between;
   background:  #324b1b;
 
 }
@@ -10,7 +21,7 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
-  border-radius: 150px;
+  border-radius: 100px;
 }
 
 // h1 {
