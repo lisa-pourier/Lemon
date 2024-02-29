@@ -8,6 +8,6 @@
   <p><%= @offer.location %></p>
   <p><%= @offer.photo %></p>
   <p>
-    <%= link_to "<< Back to All Offers", offers_path, class: "btn btn-dark"%>
-  </p>
+    <%= link_to "<< Back to All Offers", offers_path, class: "btn btn-dark" %>
+   <%= link_to "Book Now", bookings_new_path(offer_id: @offer.id), class: "btn btn-success" %>
 </div>

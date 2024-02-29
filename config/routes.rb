@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'bookings/new'
+  get 'bookings/create'
   # get 'offers/index'
   # get 'offers/show'
   # get 'offers/index'
@@ -13,5 +15,9 @@ Rails.application.routes.draw do
   # get '/offers', to: 'offers#index', as: 'offers'
   # Defines the root path route ("/")
   # root "posts#index"
-  resources :offers, only: [:index, :show, :new, :create]
+  resources :offers, only: [:index, :show, :new, :create] do
+    resources :bookings, only: [:new, :create, :index]
+  end
+  get 'dashboard', to: 'pages#dashboard'
+
 end
