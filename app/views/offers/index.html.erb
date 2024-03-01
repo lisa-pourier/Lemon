@@ -13,7 +13,7 @@
     <div class="card">
       <div class="card-body">
         <div class="offer-container">
-          <%= cl_image_tag offer.photo.key, height: 200, width: 400, crop: :pad %>
+          <%= cl_image_tag offer.photo.key, height: 100, width: 200, crop: :pad %>
         </div>
 
         <h5 class="card-title"><a href="<%= offer_path(offer) %>"><%= offer.description %></a></h5>
