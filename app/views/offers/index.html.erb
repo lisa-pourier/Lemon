@@ -10,8 +10,8 @@
 <div class="container">
 
   <% @offers.each do |offer| %>
-    <a href="<%= offer_path(offer) %>" class="card-link">
       <div class="card">
+    <a href="<%= offer_path(offer) %>" class="card-link">
         <div class="card-body">
           <div class="offer-container">
             <%= cl_image_tag offer.photo.key, height: 100, width: 200, crop: :pad %>
@@ -22,8 +22,8 @@
             <strong>Location:</strong> <%= offer.location %><br>
           </p>
         </div>
-      </div>
     </a>
+      </div>
   <% end %>
 </div>
 </body>
