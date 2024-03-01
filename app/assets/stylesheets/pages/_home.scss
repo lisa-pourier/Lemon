@@ -18,7 +18,20 @@
   border-radius: 5px;
 }
 
+h1, a {
+  font-family: "Roboto Mono" !important;
+  // "Nunito", "Helvetica", "sans-serif"
+}
 
+// this doesn't seem to be working, not sure why, check later
+p {
+  font-family: "Noto Sans Mono" !important;
+  // "Nunito", "Helvetica", "sans-serif"
+}
+
+.margin-left {
+  margin-left: 200px;
+}
 
 h1, p {
   // margin-left: 50px;
