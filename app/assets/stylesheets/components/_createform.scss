@@ -1,20 +1,23 @@
+/* app/assets/stylesheets/pages/offers.scss */
 
-.booking-container{
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set height to full viewport height */
+}
 
-  border-radius: 5px;
-  border-color: #324b1b;
-  background-color: #fff67e;
-  width: 80%;
-  margin: 40px auto;
+.createform-container {
+  width: 50%;
   padding: 20px;
+  background-color: #fff67e; /* Add a semi-transparent white background */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
 }
 
-h1 {
-  color:#324b1b;
+.booking-container {
+  width: 100%; /* Adjust as needed */
 }
-
-.booking-form {
-  // ... (other styles)
 
 .btn-primary,
 .btn-secondary {
@@ -50,4 +53,5 @@ h1 {
   background-color: #324b1b;
   border: 1px solid #fff67e;
 }
-}
+
+/* Additional styles for your form elements can be added here */
