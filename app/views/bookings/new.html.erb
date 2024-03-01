@@ -1,5 +1,4 @@
-<div class="container">
-  <div class="booking-container">
+<div class="booking-container">
     <h1>Book <%= @offer.company %></h1>
     <%= simple_form_for [@offer, @booking], html: { class: 'booking-form' } do |f| %>
       <%= f.input :start_date, as: :date, class: 'form-control' %>
@@ -7,6 +6,4 @@
       <%= link_to 'Go Back', offer_path(@offer), class: 'btn btn-secondary' %>
       <%= f.submit 'Book Now', class: 'btn btn-primary' %>
     <% end %>
-  </div>
-
 </div>
