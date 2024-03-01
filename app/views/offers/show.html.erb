@@ -1,4 +1,4 @@
-<h1>This the offer page for: <strong><%= @offer.company %></strong></h1>
+<h2><strong><%= @offer.company %></strong> 🍋</h2>
 <div class="banner" style="background-image: url(<%= image_path "lemonpic.jpg" %>)">
   <div class="card_show">
     <%= image_tag @offer.photo.url, width: '200px', height: '100px', crop: :pad %>
@@ -9,7 +9,7 @@
       <p style="margin-right: 10px; margin-bottom: 20px;"><strong>Location: </strong><%= @offer.location %> </p>
     </div>
     <p>
-      <%= link_to "<< Back to All Offers", offers_path, class: "btn btn-dark" %>
+      <%= link_to "All Cleaners", offers_path, class: "btn btn-dark" %>
       <%= link_to "Book Now", bookings_new_path(offer_id: @offer.id), class: "btn btn-success" %>
     </p>
   </div>

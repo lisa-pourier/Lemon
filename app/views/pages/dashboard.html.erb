@@ -1,6 +1,7 @@
+<div class="bookings-container">
 <h1>Dashboard</h1>
 
-<h2>All Bookings</h2>
+<h2>All Bookings 🍋</h2>
 <% @bookings.each do |booking| %>
   <p><strong>Start Day:</strong> <%= booking.start_date %></p>
   <p><strong>End Day:</strong> <%= booking.end_date %></p>
@@ -8,5 +9,29 @@
   <hr>
 <% end %>
 
-<%= link_to "Dashboard", dashboard_path %>
+<%= link_to "Back to Home", root_path, class: "btn btn-success btn-sm button-lemonzgreen" %>
+</div>
 
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      margin: 20px;
+
+    }
+
+    .bookings-container {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: justify;
+    }
+
+    h1 {
+      color: #324b1b:
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+  </style>
