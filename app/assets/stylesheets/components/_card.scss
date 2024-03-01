@@ -14,7 +14,10 @@ h1, h2 {                  // affects h1 and h2 in both offers page
   font-weight: bold;
 }
 
+.card-link {
+  text-decoration: none;
 
+}
 .container{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -22,18 +25,26 @@ h1, h2 {                  // affects h1 and h2 in both offers page
   margin-top: 20px;
 }
 
-.card {                            //offers cards on general offers page
-  border: 2px solid #324b1b;
+.card{                            //offers cards on general offers page
   border-radius: 8px;
   background-color: white;
+  margin-top: 15px;
+  padding: 25px 50px 25px 50px;
+  box-shadow: 0 8px 20px #324b1b;
+  transition: box-shadow 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.card:hover {
+  box-shadow: 0 12px 30px #324b1b;
 }
 
 .card-text {         //this is for price and location
   text-align: end;
 }
 
-.card_show{                     //single offer page
-  border: 2px solid #324b1b;
+.card_show {
+  // border: 2px solid #324b1b;
   border-radius: 8px;
   background-color: white;
   width: 50%;
@@ -42,8 +53,20 @@ h1, h2 {                  // affects h1 and h2 in both offers page
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 25px 50px 25px 50px;
+  box-shadow: 0 8px 20px #324b1b;
+  transition: box-shadow 0.3s ease;
 }
 
+.card_show:hover {
+  box-shadow: 0 12px 30px #324b1b;
+}
+
+
+.bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 .card-body {
   text-align: justify;
 }
