@@ -5,4 +5,5 @@ class Offer < ApplicationRecord
   validates :company, :description, :price, :location, :photo, presence: true
 
   has_many :bookings
+  has_many :reviews, dependent: :destroy
 end
