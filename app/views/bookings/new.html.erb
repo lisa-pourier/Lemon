@@ -1,4 +1,6 @@
+<div class="banner" style="background-image: url(<%= image_path "lemonpic.jpg" %>)">
 <div class="booking-container">
+<div class="banner2" style="background-image: url(<%= image_path "lemonpic3.jpg" %>)">
     <h1>Book <%= @offer.company %></h1>
     <%= simple_form_for [@offer, @booking], html: { class: 'booking-form' } do |f| %>
       <%= f.input :start_date, as: :date, class: 'form-control' %>
